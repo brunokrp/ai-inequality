@@ -304,8 +304,8 @@ export default function AIInequalityRadar() {
         </div>
 
         {selectedPolicy && (
-          <div className="fixed h-[93vh] mt-[7vh] inset-0 z-50 flex justify-end bg-opacity-50 transition-opacity duration-300 ease-out animate-fade-in">
-            <div className="bg-white rounded-lg max-w-md w-full p-6 shadow-lg relative transform transition-transform duration-300 scale-95 animate-fade-in">
+          <div className="fixed h-[93vh] mt-[7vh] right-0 z-50 flex justify-end pointer-events-none"">
+            <div className="bg-white rounded-lg max-w-md w-full p-6 shadow-lg relative transform transition-transform duration-300 scale-95 animate-fade-in pointer-events-auto">
               <button
                 onClick={() => setSelectedPolicy(null)}
                 className="absolute top-3 right-5 text-gray-500 hover:text-black text-xl font-bold"
