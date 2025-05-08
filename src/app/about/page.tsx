@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Button, Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import Link from 'next/link';
 
 export default function AboutPage() {
