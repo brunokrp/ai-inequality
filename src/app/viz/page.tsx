@@ -200,7 +200,7 @@ export default function AIInequalityRadar() {
           </Button>
         </div>
         
-       <div className="absolute top-4 left-4 bg-white bg-opacity-90 rounded shadow p-3 space-y-1 z-20">
+       <div className="absolute top-4 left-4 bg-white bg-opacity-90 rounded shadow p-3 space-y-1 z-20 font-mono">
           <p className="font-semibold text-black text-lg">Channels</p>
           {Object.entries(channelColors).map(([channel, color]) => (
             <div key={channel} className="flex items-center gap-2">
@@ -304,7 +304,7 @@ export default function AIInequalityRadar() {
         </div>
 
         {selectedPolicy && (
-          <div className="fixed h-[93vh] mt-[7vh] right-0 z-50 flex justify-end pointer-events-none"">
+          <div className="fixed h-[93vh] mt-[1vh] right-0 z-50 flex justify-end pointer-events-none">
             <div className="bg-white rounded-lg max-w-md w-full p-6 shadow-lg relative transform transition-transform duration-300 scale-95 animate-fade-in pointer-events-auto">
               <button
                 onClick={() => setSelectedPolicy(null)}
