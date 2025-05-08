@@ -24,7 +24,7 @@ export default function HomePage() {
       </div>
 
       {/* Buttons */}
-      <div className="flex left gap-4 mt-3 m-10 ml-15">
+      <div className="flex left gap-4 mt-3 m-10 ml-15 font-mono">
         <Link href="/theory" passHref legacyBehavior>
           <Button variant="warning" size="sm">Theoretical Background</Button>
         </Link>
