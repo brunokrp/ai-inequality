@@ -32,8 +32,6 @@ export default function AIInequalityRadar() {
   const [aiWorldFilter, setAiWorldFilter] = useState("");
   const [showWorldOptions, setShowWorldOptions] = useState(false);
   const [selectedPolicy, setSelectedPolicy] = useState<Policy | null>(null);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [showTags, setShowTags] = useState(false);
   const svgContainerRef = useRef<HTMLDivElement>(null);
   const gRef = useRef<SVGGElement>(null);
 
@@ -255,7 +253,6 @@ export default function AIInequalityRadar() {
                 const isLeftSide = angle > Math.PI / 2 && angle < (3 * Math.PI) / 2;
                 const textRotation = isLeftSide ? rotation + 180 : rotation;
                 const attributeKey = policy.channel || policy.type || policy.aiWorld;
-                const colorIndex = Math.abs(attributeKey.split('').reduce((sum, c) => sum + c.charCodeAt(0), 0)) % Object.keys(channelColors).length;
                 const fillColor = channelColors[policy.channel?.trim() as keyof typeof channelColors] || "#999";
 
                 return (
