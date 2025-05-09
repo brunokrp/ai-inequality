@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* Header with Tabs */}
       <Navbar bg="light" expand="lg" className="shadow">
         <Container>
-          <Navbar.Brand className="text-xl font-mono font-bold" href="/">AI & Inequality</Navbar.Brand>
+          <Navbar.Brand className="text-xl font-mono" href="/">AI & Inequality</Navbar.Brand>
           <Nav className="ms-auto">
             <Nav.Link className="font-mono" href="/theory">Theory</Nav.Link>
             <Nav.Link className="font-mono" href="/viz">Viz</Nav.Link>

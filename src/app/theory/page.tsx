@@ -11,9 +11,9 @@ export default function TheoryPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar bg="light" expand="lg" className="shadow">
+      <Navbar bg="light" expand="lg" className="fixed top-0 left-0 w-full z-50 shadow">
         <Container>
-          <Navbar.Brand className="text-xl font-mono font-bold" href="/">AI & Inequality</Navbar.Brand>
+          <Navbar.Brand className="text-xl font-mono" href="/">AI & Inequality</Navbar.Brand>
           <Nav className="ms-auto">
             <Nav.Link className="font-mono" href="/theory">Theory</Nav.Link>
             <Nav.Link className="font-mono" href="/viz">Viz</Nav.Link>
@@ -48,7 +48,7 @@ export default function TheoryPage() {
           Third, AI introduces a less visible but equally critical form of inequality: unequal risk distribution due to algorithmic bias. As Ferrara notes, AI systems can perpetuate or even exacerbate existing social biases, especially when trained on historical data reflecting systemic discrimination. These errors in decision-making processes often lead to unfair or harmful outcomes for marginalized groups. Bias in AI systems is a form of technological risk that is inequitably distributed, placing a disproportionate burden on those who are already vulnerable due to race, gender, socioeconomic status, or geography.
           </p>
           <p className="font-mono text-sm">
-          In sum, this project identifies three key sources of AI inequality — concentrated rents, downward labor pressure, and unequal algorithmic harms — and proposes complementary strategies to either prevent these inequalities from arising or remedy their impacts after the fact. Addressing these distinct but interconnected channels will require a combination of regulatory, institutional, and technical interventions
+          In sum, this project identifies three key sources of AI inequality — concentrated rents, downward wage pressure, and unequal algorithmic harms — and proposes complementary strategies to either prevent these inequalities from arising or remedy their impacts after the fact. Addressing these distinct but interconnected channels will require a combination of regulatory, institutional, and technical interventions.
           </p>
 
           <div className="-mx-4 sm:-mx-6 lg:-mx-10">
@@ -136,11 +136,11 @@ export default function TheoryPage() {
                   </p>
                   <p className="font-mono text-[#2B9993] font-bold mt-4">Prevention: Algorithmic Justice</p>
                   <p className="font-mono text-sm">
-                    To prevent this form of inequality, it is essential to pursue algorithmic justice — a set of principles and practices aimed at detecting, mitigating, and ultimately avoiding unjust disparities in algorithmic outcomes. Achieving this requires much more than technical "debiasing." It involves recognizing the normative questions at stake, articulating clear fairness objectives, and confronting difficult questions about societal values. Barocas emphasizes that algorithmic systems must be designed with transparency, interpretability, and accountability in mind, and that current research offers cause for cautious optimism. In domains with less statistical uncertainty — like natural language processing or computer vision — effective fairness interventions are already proving feasible. Moreover, because algorithms demand explicit specification of decision-making goals, they offer an opportunity to make fairness a central, rather than peripheral, concern.
+                    To prevent this form of inequality, it is essential to pursue algorithmic justice — a set of principles and practices aimed at detecting, mitigating, and ultimately avoiding unjust disparities in algorithmic outcomes. Achieving this requires much more than technical "debiasing." It involves recognizing the normative questions at stake, articulating clear fairness objectives, and confronting difficult questions about societal values. Barocas emphasizes that algorithmic systems must be designed with transparency, interpretability, and accountability in mind, and that current research offers cause for cautious optimism. 
                   </p>
                   <p className="font-mono text-[#8EBF57] font-bold mt-4">Remedy: Information Symmetry</p>
                   <p className="font-mono text-sm">
-                    To remedy unequal risk distribution where it already exists, a key strategy is to reduce information asymmetry between AI developers and the public, including regulators, procurers, insurers, and users. As Tomei notes, much of the risk in AI stems from inadequate information — about system capabilities, limitations, and societal impacts. This opacity impedes market governance mechanisms like insurance, auditing, and procurement, which rely on robust data to assess and manage risk. Standardized disclosure requirements can correct this imbalance by making relevant information about AI systems widely available and comparable. Such transparency would empower market participants to make more informed choices, facilitate risk pricing and capital allocation, and ultimately distribute AI-related risks more equitably across society. In this way, information disclosure complements fairness interventions by enabling responsive and adaptive governance structures.
+                    To remedy unequal risk distribution where it already exists, a key strategy is to reduce information asymmetry between AI developers and the public, including regulators, procurers, insurers, and users. As Tomei notes, much of the risk in AI stems from inadequate information — about system capabilities, limitations, and societal impacts. Transparency would empower market participants to make more informed choices, facilitate risk pricing and capital allocation, and ultimately distribute AI-related risks more equitably across society. In this way, information disclosure complements fairness interventions by enabling responsive and adaptive governance structures.
                   </p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function TheoryPage() {
           The instruments proposed or used to mitigate AI-driven inequality can be understood more clearly by analyzing them through three key dimensions: the world-view of AI that motivates them, the maturity level of their development and application, and their institutional type. These dimensions help to explain why certain tools emerge, how far they've progressed, and who is responsible for their design and implementation.
           </p>
 
-          <p className="font-mono font-bold text-amber-400 text-xl"> AI Worldview</p>
+          <p className="font-mono font-bold text-amber-400 text-xl"> 1] AI Worldview</p>
           <p className="font-mono text-sm">
           One perspective sees AI as super technology — an unprecedented, potentially civilization-transforming force, akin to or surpassing the Industrial Revolution. Under this view, inequality arises from extreme power concentration among frontier AI developers, and mitigation strategies tend to be radical and forward-looking. Examples include proposals for windfall taxes on advanced AI firms, which would redistribute future concentrated wealth; global compute-sharing initiatives, modeled on CERN, to democratize access to critical resources; and publicly funded sovereign AI efforts aimed at ensuring national and global benefit from key technological advances. These instruments reflect the fear that, without active intervention, AI will entrench a small elite with disproportionate control over economic and political outcomes.
           </p>
@@ -159,7 +159,7 @@ export default function TheoryPage() {
           In contrast, the second perspective treats AI as normal technology — a powerful but ultimately integratable general-purpose tool, like electricity or the internet. Here, inequality is understood through familiar economic and institutional mechanisms: wage suppression, access to capital, and systemic bias. Interventions are evolutionary rather than revolutionary. For example, wage subsidies, earned income tax credits, and minimum wage increases are used to offset labor market disruptions. Tools like algorithmic fairness audits, transparency mandates, and equity-focused procurement policies aim to reduce discriminatory outcomes and improve accountability. These instruments seek to embed fairness into AI’s diffusion without overhauling the institutional order.
           </p> 
 
-          <p className="font-mono font-bold text-amber-400 text-xl"> Maturity level </p>
+          <p className="font-mono font-bold text-amber-400 text-xl"> 2] Maturity level </p>
           <p className="font-mono text-sm">
           The second lens assesses how far along each instrument is in terms of development and real-world application.
           </p>
@@ -167,16 +167,16 @@ export default function TheoryPage() {
           Some instruments have only been mentioned - they have been proposed in abstract terms but have not been tailored to the AI context. For instance, references to the importance of intellectual property reform for limiting market power are often made, but rarely specified in terms of how patent or copyright regimes should evolve for AI systems.
           </p>
           <p className="font-mono text-sm">
-          Others are conceptualized, meaning they have been clearly articulated for AI but not yet implemented. The idea of a windfall tax on AGI developers, or international compute-sharing coalitions, falls in this category. These proposals are detailed in vision documents or research papers but have not moved into formal policy design or piloting.
+          Others are conceptualized, meaning they have been clearly articulated for AI but not yet implemented. The ideas of a windfall tax on AGI developers, or of AI sovereign bonds, fall in this category. These proposals are detailed in vision documents or research papers but have not moved into formal policy design or piloting.
           </p>  
           <p className="font-mono text-sm">
-          A number of tools have reached the tested stage — they have been implemented in practice, often in limited contexts. Examples include public procurement standards requiring fairness and explainability in AI systems, or algorithmic audits performed by civil society organizations and private firms. These tools show promise, but rigorous evaluations of their effectiveness remain limited.
+          A number of tools have reached the tested stage — they have been implemented in practice, often in limited contexts. Examples include public procurement standards requiring fairness and explainability in AI systems, or even experiments testing the effects of universal basic income schemes. These tools show promise, but rigorous evaluations of their effectiveness remain limited.
           </p>
           <p className="font-mono text-sm">
-          Finally, some instruments are available as products or have demonstrable evidence behind them. Wage subsidies and earned income tax credits are long-standing labor market tools already used in response to automation-induced displacement. Insurance products for AI liability and open-source model development with public funding are also beginning to take shape, providing viable paths for inclusive innovation.
+          Finally, some instruments are available as products or have demonstrable evidence behind them. AI auditing and open-source model development are already available, providing viable paths for inclusive innovation.
           </p>  
 
-          <p className="font-mono font-bold text-amber-400 text-xl"> Type of Instrument </p>
+          <p className="font-mono font-bold text-amber-400 text-xl"> 3] Type of Instrument </p>
           <p className="font-mono text-sm">
           The third lens distinguishes between the institutional actors and logics that govern each instrument.
           </p>
@@ -190,7 +190,7 @@ export default function TheoryPage() {
           Mixed instruments blend elements of both. For example, public procurement standards require private vendors to meet certain fairness or transparency criteria to win contracts, effectively using public leverage to shape private innovation. Similarly, standardized disclosure mandates enable both regulatory oversight and market-based evaluation, helping stakeholders like insurers or auditors make informed decisions.
           </p>
 
-          <p className="font-mono font-bold text-amber-400 text-2xl"> References </p>
+          <p className="font-mono font-bold text-amber-400 text-2xl"> Main Theoretical References </p>
           <ol className="list-decimal list-inside space-y-2 font-mono text-sm">
             <li>
               Korinek, Anton, and Joseph E. Stiglitz. <em>"Artificial intelligence and its implications for income distribution and unemployment."</em> In <strong>The Economics of Artificial Intelligence: An Agenda</strong>, pp. 349–390. University of Chicago Press, 2018.

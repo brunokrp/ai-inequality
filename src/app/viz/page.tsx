@@ -127,7 +127,7 @@ export default function AIInequalityRadar() {
     <div className="min-h-screen bg-white">    
       <Navbar bg="light" expand="lg" className="shadow">
         <Container>
-          <Navbar.Brand className="text-xl font-mono font-bold" href="/">AI & Inequality</Navbar.Brand>
+          <Navbar.Brand className="text-xl font-mono" href="/">AI & Inequality</Navbar.Brand>
           <Nav className="ms-auto">
             <Nav.Link className="font-mono" href="/theory">Theory</Nav.Link>
             <Nav.Link className="font-mono" href="/viz">Viz</Nav.Link>
@@ -324,12 +324,37 @@ export default function AIInequalityRadar() {
 
               <div className="mt-4 font-mono">
                 <hr className="my-4 border-t border-gray-300"/>
-                <h3 className="text-lg font-bold">References</h3>
-                <ul className="text-sm text-gray-600 list-disc">
-                  {selectedPolicy.references.map((ref, idx) => (
-                    <li key={idx}>{ref}</li>
-                  ))}
-                </ul>
+                <h3 className="text-sm mb-2">References</h3>
+                <div className="space-y-2">
+                  {selectedPolicy.references.map((ref, idx) => {
+                    if (typeof ref === "string") {
+                      // fallback for old format
+                      return (
+                        <div key={idx} className="block border border-gray-300 text-xs rounded-md p-3">
+                          {ref}
+                        </div>
+                      );
+                    } else if (ref.title && ref.url) {
+                      return (
+                        <a
+                          key={idx}
+                          href={ref.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block border border-gray-300 rounded-md p-3 hover:bg-gray-100 transition"
+                        >
+                          <p className="text-sm font-semibold text-blue-700 underline">{ref.title}</p>
+                        </a>
+                      );
+                    } else {
+                      return (
+                        <div key={idx} className="text-sm text-red-500">
+                          Invalid reference format
+                        </div>
+                      );
+                    }
+                  })}
+                </div>
               </div>
             </div>
           </div>
