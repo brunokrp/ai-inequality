@@ -18,7 +18,7 @@ type Policy = {
   index: number;
   title: string;
   description: string;
-  references: string[];
+  references: (string | { title: string; url: string })[];
   type: string;
   aiWorld: string;
   level: number;
