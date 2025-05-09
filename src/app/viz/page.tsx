@@ -75,7 +75,6 @@ export default function AIInequalityRadar() {
 
     g.setAttribute("transform", `translate(${translateX}, ${translateY}) scale(${scale})`);
 
-    
     let isPanning = false;
     let startX = 0;
     let startY = 0;
@@ -138,7 +137,7 @@ export default function AIInequalityRadar() {
       </Navbar>
       
       <div ref={svgContainerRef} className="relative w-full h-[800px] bg-slate overflow-auto">
-        <div className="position-absolute bottom-0 start-50 translate-middle-x mb-5 z-3 d-flex gap-2">
+        <div className="position-absolute font-mono text-xs bottom-0 start-50 translate-middle-x mb-5 z-3 d-flex gap-2">
           <Dropdown as={ButtonGroup}>
             <Button
               variant={typeFilter ? "primary" : "light"}

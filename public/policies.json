@@ -2,7 +2,7 @@
   {
     "index": 1,
     "title": "International Compute Sharing",
-    "description": "Access to compute is a key driver of AI performance and deployment, yet its growing scarcity and cost—driven by high demand and limited supply of specialized chips—threaten to deepen global AI inequality. Proposed policy responses include pooling compute resources through international cooperation, akin to CERN, or subsidizing access for developers in low-income countries to promote innovation. These strategies, while promising, face major hurdles such as steep costs, potential constraints on cutting-edge progress, and concerns over security and the broad distribution of powerful AI capabilities.",
+    "description": "Access to compute is a key driver of AI performance and deployment, yet its growing cost — driven by high demand and limited supply of specialized chips — threaten to deepen global AI inequality. Proposed policy responses include pooling compute resources through international cooperation, akin to CERN, or subsidizing access for developers in low-income countries to promote innovation. These strategies, while promising, face major hurdles such as steep costs, potential constraints on cutting-edge progress, and concerns over security and the broad distribution of powerful AI capabilities.",
     "references": "Ways Forward for Global AI Benefit Sharing",
     "type": "Public Policy",
     "aiWorld": "AI as Normal Technology",
